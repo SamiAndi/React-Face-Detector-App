@@ -1,0 +1,48 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    background: #1d1d1d;
+}
+
+video,
+canvas {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mirror * {
+    transform: translate(-50%, -50%) scaleX(-1);
+}
+
+video {
+    width: auto;
+    height: auto;
+    max-width: 94%;
+    max-height: 94%;
+    border-radius: 30px;
+}
+
+video.deactive {
+    visibility: hidden;
+}
+
+.panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-right-radius: 30px;
+    padding: 0px 25px;
+    font-size: 120%;
+}
+
+.panel button {
+    font-size: 100%;
+    margin-right: 5px;
+}
